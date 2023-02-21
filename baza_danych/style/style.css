@@ -1,0 +1,276 @@
+:root
+{
+    --fioletowy: #7855a1;
+    --ciemnyFioletowy: rgb(15, 13, 16); 
+}
+
+html, body, main
+{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main
+{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer
+{
+    height: 10%;
+}
+
+body
+{
+    background-image: url('../img/bg.png');
+}
+
+h3
+{
+    margin-top: 10px;
+}
+
+article
+{
+    width: 30%;
+    min-height: 40vh;
+    background-color: var(--ciemnyFioletowy);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgb(21, 18, 24);
+    color: var(--fioletowy);
+    margin: 10px;
+
+    animation-name: artykulWejscie;
+    animation-duration: 0.4s;
+}
+
+@keyframes artykulWejscie 
+{
+    from{opacity: 0;}
+    to{opacity: 1;}    
+}
+
+#kreatorBazDanychMain
+{
+    min-height: 190vh;
+    display: block;
+}
+
+#lewyArtykul
+{
+    margin-top: 200px;
+    float:left;
+    margin-left: 30px;
+}
+
+#prawyArtykul
+{
+    margin-top: 200px;
+    margin-right: 40px;
+    float:right;
+}
+
+.wysrodkowanieZawartosci
+{
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wysrodkowanieZawartosciKolumna
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.przyciskWyboruPolaczenia
+{
+    float:left;
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    color:transparent;
+    border: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    cursor: pointer;
+    transition: width 0.7s, height 0.7s;
+}
+
+.przyciskWyboruPolaczenia:hover
+{
+    width: 170px;
+    height: 170px;
+}
+
+.przyciskTabel
+{
+    width: 40px !important;
+    height: 40px !important;
+    margin-bottom: 70px;
+}
+
+#przyciskSerwer
+{
+    background-image: url('../img/server.png');
+}
+
+#przyciskBazaDanych
+{
+    background-image: url('../img/database.png');
+}
+
+#przyciskPowrot
+{
+    margin-left: 30px;
+    width: 100px;
+    height: 50px;
+}
+
+input, select
+{
+    margin: 15px;
+}
+
+input[type=text]
+{
+    outline: none;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    text-align: center;
+    border-color: var(--fioletowy);
+    color: var(--fioletowy);
+}
+
+select
+{
+    border-style: solid;
+    border-width: 2px;
+    background-color: var(--ciemnyFioletowy);
+    border-color:  var(--fioletowy);
+    border-radius: 9px;
+    text-align: center;
+    color:  var(--fioletowy);
+    width: 200px;
+    height: 40px;
+    transition: background-color 0.7s, color 0.7s;
+    font-size: 15px;
+}
+
+select:hover
+{
+    background-color:  var(--fioletowy);
+    color:var(--ciemnyFioletowy);
+}
+
+.przycisk
+{
+    background-color: #7855a1;
+    width: 140px;
+    height: 50px;
+    border-radius: 9px;
+    border-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: box-shadow 0.4s, height 0.4s, width 0.4s;
+    font-size: 20px;
+    margin: 30px;
+}
+
+.przycisk:hover
+{
+    box-shadow: 2px 2px 5px #5f3f82;
+    width: 145px;
+    height: 55px;
+}
+
+#listaKolumn
+{
+    flex: 1;
+}
+
+#listaRekordow
+{
+    width: 400px;
+}
+
+#listaRekordow option
+{
+    width: 400px;
+}
+
+#nazwaTabeli
+{
+    width: 250px !important;
+}
+
+#kluczGlowny
+{
+    width: 200px !important;
+}
+
+#wygenerujTabelePrzycisk
+{
+    width: 250px !important;
+}
+
+table
+{
+    margin-top: 250px;
+}
+
+table, td, tr, th
+{
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--fioletowy);
+    color: var(--fioletowy);
+    text-align: center;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+table
+{
+    margin-top: 10px;
+}
+
+th
+{
+    background-color: var(--ciemnyFioletowy);
+    font-size: 30px;
+}
+
+tr
+{
+    background-color: rgb(27, 21, 30); 
+    font-size: 27px;
+}
+
+h1
+{
+    text-align: center;
+    color: var(--fioletowy);
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--fioletowy);
+    padding: 4px;
+    background-color: var(--ciemnyFioletowy);
+}
+
